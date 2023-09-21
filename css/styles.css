@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/Fredoka-VariableFont_wdth\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'PatrickHand';
+    src: url('fonts/PatrickHand-Regular.ttf')
+}
+
 * {
     margin: 0;
     box-sizing: border-box;

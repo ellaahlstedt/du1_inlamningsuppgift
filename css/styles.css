@@ -1,11 +1,21 @@
 @font-face {
-    font-family: 'Fredoka';
-    src: url('fonts/Fredoka-VariableFont_wdth\,wght.ttf');
+    font-family: 'BarlowCon';
+    src: url('fonts/BarlowCondensed-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'PatrickHand';
-    src: url('fonts/PatrickHand-Regular.ttf')
+    font-family: 'BarlowSemiCon';
+    src: url('fonts/BarlowSemiCondensed-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'BungeeOut';
+    src: url('fonts/BungeeOutline-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'BungeeSha';
+    src: url('fonts/BungeeShade-Regular.ttf')
 }
 
 * {
@@ -28,7 +38,7 @@ body div {
 }
 
 header h1 {
-    font-family: 'Fredoka';
+    font-family: 'BungeeSha';
     color: #F3FDE8;
     font-size: 60px;
 }
@@ -44,7 +54,7 @@ nav a {
 
     background-color: rgba(243,253,232,0.6);
     color: #618264;
-    font-family: 'PatrickHand';
+    font-family: 'BarlowCon';
     text-decoration: none;
     font-size: 25px;
     text-align: center;

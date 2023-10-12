@@ -29,23 +29,29 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     margin: 50px 100px;
+    font-family: 'BarlowCon';
 }
 
+/* Content background */
 body > div {
+    max-width: 1200px;
     background-color: rgba(68,61,100,0.5);
     border-radius: 20px;
-    padding: 20px 30px;
+    padding: 0 30px;
+    margin: auto;
 }
 
+/* Header */
 header h1 {
     font-family: 'BungeeSha';
     color: #F3FDE8;
-    font-size: 60px;
+    font-size: 4rem;
 }
 
+/* Navbar */
 nav {
     display: flex;
-    gap: 3px;
+    gap: 1vh;
 }
 
 nav a {
@@ -56,11 +62,10 @@ nav a {
     color: #27233a;
     font-family: 'BarlowCon';
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5rem;
     text-align: center;
 
-    margin-top: 40px;
-    padding: 10px;
+    padding: 1vh;
     border-radius: 5px;
 }
 
@@ -80,4 +85,62 @@ nav a:nth-child(3):hover {
     background-color: rgba(181, 178, 197, 0.6);
     color: #F3FDE8;
     cursor: default;
+}
+
+/* Section 1 */
+
+main section:first-child {
+    background-color: rgba(0,0,0,0.5);
+    color: #F3FDE8;
+    border: 1px solid #F3FDE8;
+    border-radius: 10px;
+    padding: 2vh;
+    margin: 8vh 0;
+}
+
+main section:first-child > div:first-child {
+    display: flex;
+    gap: 2vh;
+}
+
+/* Container 1 */
+main section:first-child > div:first-child > div:first-child {
+    flex-basis: 0;
+    flex-grow: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+/* Container 1.1 */
+main section:first-child h2 {
+    font-family: 'BungeeOut';
+    font-size: 2rem;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+main section:first-child h3 {
+    font-family: 'BarlowSemiCon';
+    font-size: 1.5;
+}
+
+/* Container 1.2 */
+main section:first-child div:first-child > ul {
+    list-style-type: none;
+}
+
+
+/* Container 2 */
+main section:first-child > div:first-child > div:last-child {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+main section:first-child > div:first-child > div:last-child img {
+    width: 100%;
+    object-fit: cover;
 }

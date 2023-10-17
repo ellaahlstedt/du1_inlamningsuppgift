@@ -39,13 +39,14 @@ body > div {
     border-radius: 20px;
     padding: 0 30px;
     margin: auto;
+    font-size: 1.3vw;
 }
 
 /* Header */
 header h1 {
     font-family: 'BungeeSha';
     color: #F3FDE8;
-    font-size: 4rem;
+    font-size: 5vw;
 }
 
 /* Navbar */
@@ -62,7 +63,7 @@ nav a {
     color: #27233a;
     font-family: 'BarlowCon';
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2vw;
     text-align: center;
 
     padding: 1vh;
@@ -87,59 +88,55 @@ nav a:nth-child(3):hover {
     cursor: default;
 }
 
-/* Sec 1 */
-
-main section:first-child {
+/* Sec 1&2 */
+main section {
     background-color: rgba(0,0,0,0.5);
     color: #F3FDE8;
     border: 1px solid #F3FDE8;
     border-radius: 10px;
     padding: 2vh;
-    margin: 8vh 0;
+    margin: 2vh 0;
 
     display: flex;
     flex-direction: column;
     gap: 2vh;
 }
 
-main section:first-child > div:first-child {
+main section > div:first-child {
     display: flex;
     gap: 2vh;
 }
 
-/* Sec 1 Con 1 */
-main section:first-child > div:first-child > div:first-child {
+/* Con 1 */
+main section > div:first-child > div:first-child {
     flex-basis: 0;
-    flex-grow: 2;
+    flex-grow: 1.5;
 
     display: flex;
     flex-direction: column;
     gap: 8vh;
 }
 
-/* Sec 1 Con 1.1 */
-main section:first-child h2 {
+/* Con 1.1 */
+main section h2 {
     font-family: 'BungeeOut';
-    font-size: 2rem;
-    height: 4vh;
+    font-size: 2.5vw;
     display: flex;
     align-items: center;
-    margin-bottom: 1vh;
 }
 
-main section:first-child h3 {
+main section h3 {
     font-family: 'BarlowSemiCon';
-    font-size: 1.5;
+    font-size: 1.5vw;
 }
 
-/* Sec 1 Con 1.2 */
-main section:first-child div:first-child ul {
+/* Con 1.2 */
+main section div:first-child ul {
     list-style-type: none;
 }
 
-
 /* Con 2 */
-main section:first-child > div:first-child > div:last-child {
+main section > div:first-child > div:last-child {
     flex-basis: 0;
     flex-grow: 1;
 
@@ -149,24 +146,23 @@ main section:first-child > div:first-child > div:last-child {
 }
 
 /* Con 2.1 */
-
-main section:first-child > div:first-child > div:last-child > div:first-child {
+main section > div:first-child > div:last-child > div:first-child {
     position: relative;
 }
 
-main section:first-child > div:first-child > div:last-child > div:first-child > img {
+main section > div:first-child > div:last-child > div:first-child > img {
     border-radius: 10px 10px 0 0;
 }
 
-main section:first-child > div:first-child > div:last-child > div:first-child > img:first-child {
-    height: 100%;
+main section > div:first-child > div:last-child > div:first-child > img:first-child {
     width: 100%;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 
-main section:first-child > div:first-child > div:last-child > div:first-child > img:last-child {
-    height: 100%;
+main section > div:first-child > div:last-child > div:first-child > img:last-child {
     width: 100%;
+    aspect-ratio: 1;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -175,37 +171,57 @@ main section:first-child > div:first-child > div:last-child > div:first-child > 
     transition: opacity 0.3s;
 }
 
-main section:first-child > div:first-child > div:last-child > div:first-child:hover > img:last-child {
+main section > div:first-child > div:last-child > div:first-child:hover > img:last-child {
     opacity: 1;
 }
 
-main section:first-child > div:first-child > div:last-child > div:last-child {
+/* Con 2.2 */
+main section > div:first-child > div:last-child > div:last-child {
     display: flex;
     gap: 1vh;
 }
 
-/* Sec 1 Con 2.2 */
-main section:first-child > div:first-child > div:last-child > div:last-child > div {
+main section > div:first-child > div:last-child > div:last-child > div {
     flex-basis: 0;
     flex-grow: 1;
-    background-color: rgba(68,61,100,0.5);
+    background-color: rgba(68,61,100,0.9);
     padding: 1.5vh;
 }
 
-main section:first-child > div:first-child > div:last-child > div:last-child > div p {
+main section > div:first-child > div:last-child > div:last-child > div p {
     font-family: 'BarlowSemiCon';
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.5vw;
 }
 
-main section:first-child > div:first-child > div:last-child > div:last-child > div:first-child {
+main section > div:first-child > div:last-child > div:last-child > div ol {
+    padding-left: 2.5vh;
+}
+
+main section > div:first-child > div:last-child > div:last-child > div:first-child {
     border-radius: 0 0 0 10px;
 }
 
-main section:first-child > div:first-child > div:last-child > div:last-child > div:last-child {
+main section > div:first-child > div:last-child > div:last-child > div:last-child {
     border-radius: 0 0 10px 0;
 }
 
+/* Con 3 */
+main section> div:last-child > div {
+    background-color: #F3FDE8;
+    color: rgb(68,61,100);
+    padding: 2vh;
+    min-height: 22vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Sec 1 */
+main section:first-child {
+    margin-top: 8vh;
+}
 
 /* Sec 1 Con 3 */
 main section:first-child > div:last-child {
@@ -213,15 +229,6 @@ main section:first-child > div:last-child {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 100%;
     gap: 1vh;
-}
-
-main section:first-child > div:last-child > div {
-    background-color: #F3FDE8;
-    color: rgb(68,61,100);
-    padding: 1vh 2vh;
-    height: 100%;
-    display: flex;
-    align-items: center;
 }
 
 /* Sec 1 Con 3.1 */
@@ -244,12 +251,13 @@ main section:first-child > div:last-child > div:nth-child(3) {
     background-size: cover;
 }
 
-main section:first-child > div:last-child > div:nth-child(3) p {
+main section:first-child > div:last-child > div:nth-child(3)::after {
+    content: "Junia Jonsdottir, Twin";
     position: absolute;
     bottom: 1vh;
     font-family: 'BarlowSemiCon';
     color: #F3FDE8;
-    text-shadow: 0 0 2px #fff;
+    text-shadow: 0 0 2px #000;
 }
 
 /* Sec 1 Con 3.4 */
@@ -257,4 +265,77 @@ main section:first-child > div:last-child > div:last-child {
     grid-column: 6;
     border-radius: 10px 10px 10px 0;
     height: 100%;
+}
+
+/* Sec 2 */
+
+/* Sec 2 Con 3 */
+main section:last-child > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100%;
+    gap: 1vh;
+}
+
+/* Sec 2 Con 3.1 */
+main section:last-child > div:last-child > div:first-child {
+    grid-column: 1/3;
+    border-radius: 10px 10px 10px 0;
+}
+
+/* Sec 2 Con 3.2 */
+main section:last-child > div:last-child > div:nth-child(2) {
+    grid-column: 3;
+    border-radius: 0 10px 10px 10px;
+}
+
+/* Sec 2 Con 3.3 */
+main section:last-child > div:last-child > div:nth-child(3) {
+    grid-column: 4/6;
+    border-radius: 0 10px 10px 10px;
+    position: relative;
+    background-image: url('../images/laufeybea.jpg');
+    background-size: cover;
+}
+
+main section:last-child > div:last-child > div:nth-child(3)::after {
+    content: "Beabadoobee, Artist";
+    position: absolute;
+    bottom: 1vh;
+    left: 1vh;
+    font-family: 'BarlowSemiCon';
+    color: #F3FDE8;
+    text-shadow: 0 0 2px #000;
+}
+
+/* Sec 2 Con 3.4 */
+main section:last-child > div:last-child > div:last-child {
+    border-radius: 10px 10px 0 10px;
+}
+
+/* Footer */
+footer {
+    color: #fff;
+    margin-top: 50px;
+    padding-bottom: 5px;
+}
+
+/* Media Queries */
+ 
+@media (min-width: 1200px) {
+    body > div {font-size: 16px;}
+    header h1 {font-size: 60px;}
+    nav a {font-size: 24px;}
+    main section h2 {font-size: 30px;}
+    main section h3 {font-size: 18px;}
+    main section > div:first-child > div:last-child > div:last-child > div p {font-size: 18px;}
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+    body > div {font-size: 13px;}
+    header h1 {font-size: 50px;}
+    nav a {font-size: 20px;}
+    main section h2 {font-size: 25px;}
+    main section h3 {font-size: 16px;}
+    main section > div:first-child > div:last-child > div:last-child > div p {font-size: 16px;}
 }

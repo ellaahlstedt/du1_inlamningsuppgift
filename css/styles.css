@@ -387,6 +387,10 @@ footer {
         margin: 6% 3%;
     }
 
+    header {
+        text-align: center;
+    }
+
     body > div {
         font-size: calc(var(--font_size) + 0.3vw);
         padding: 0 4%;
@@ -512,6 +516,10 @@ footer {
     body {
         background-image: url('../images/backgroundmobile.jpg');
         margin: 0;
+    }
+
+    header {
+        text-align: center;
     }
 
     body > div {

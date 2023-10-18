@@ -393,7 +393,7 @@ footer {
 
     /* Sec 1&2 */
     main section > div {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     /* Con 2 */
@@ -521,8 +521,10 @@ footer {
     /* Sec 1&2 */
 
     main > section > div:first-child {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
+
+    /* Con 1 */
     main > section > div:first-child > div:last-child {
         flex-direction: column;
     }
@@ -532,10 +534,16 @@ footer {
         flex-grow: 1;
     }
 
+    /* Con 1.2 */
     main > section > div:first-child > div:last-child > div:first-child {
         width: 100%;
     }
 
+    main section > div:first-child > div:last-child > div:first-child:hover > img:last-child {
+        opacity: 0;
+    }
+
+    /* Con 2.2 */
     main > section > div:first-child > div:last-child > div:last-child {
         flex-direction: row;
     }

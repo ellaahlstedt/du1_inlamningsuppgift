@@ -26,6 +26,7 @@
 
 :root {
     --font_size: 13px;
+    --tablet_size: calc(var(--font_size) - 13px);
 }
 
 * {
@@ -374,12 +375,12 @@ footer {
 @media (min-width: 500px) and (max-width: 800px) {
 
     /* Font sizes */
-    header h1 {font-size: calc(var(--font_size) + 37px);}
-    nav a {font-size: calc(var(--font_size) + 7px);}
-    main section h2 {font-size: calc(var(--font_size) + 12px);}
-    main section h3 {font-size: calc(var(--font_size) + 3px);}
-    main section > div:first-child > div:last-child > div:last-child > div p {font-size: 3vw}
-    main section > div:first-child > div:last-child > div:last-child > div ol {font-size: 2.5vw}
+    header h1 {font-size: calc(var(--font_size) + 4.6vw);}
+    nav a {font-size: calc(var(--font_size) + 0.8vw);}
+    main section h2 {font-size: calc(var(--font_size) + 1.5vw);}
+    main section h3 {font-size: calc(var(--font_size) + 0.38vw);}
+    main section > div:first-child > div:last-child > div:last-child > div p {font-size: calc(var(--tablet_size) + 3vw)}
+    main section > div:first-child > div:last-child > div:last-child > div ol {font-size: calc(var(--tablet_size) + 2.5vw)}
 
     body {
         background-image: none;
@@ -387,7 +388,7 @@ footer {
     }
 
     body > div {
-        font-size: 16px;
+        font-size: calc(var(--font_size) + 0.3vw);
         padding: 0 4%;
     }
 

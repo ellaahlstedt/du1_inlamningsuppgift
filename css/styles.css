@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: 'BarlowSemiConBold';
+    src: url('fonts/BarlowSemiCondensed-Bold.ttf')
+}
+
+@font-face {
     font-family: 'BungeeOut';
     src: url('fonts/BungeeOutline-Regular.ttf')
 }
@@ -16,6 +21,11 @@
 @font-face {
     font-family: 'BungeeSha';
     src: url('fonts/BungeeShade-Regular.ttf')
+}
+
+
+:root {
+    --font_size: 13px;
 }
 
 * {
@@ -28,25 +38,27 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    margin: 50px;
+    margin: 48px 25px;
     font-family: 'BarlowCon';
 }
 
 /* Content background */
 body > div {
-    max-width: 1100px;
+    max-width: 1150px;
     background-color: rgba(68, 61, 100, 0.5);
     border-radius: 20px;
     padding: 0 30px;
     margin: auto;
-    font-size: 1.5vw;
+    font-size: calc(var(--font_size) + 0.3vw);
 }
 
 /* Header */
 header h1 {
     font-family: 'BungeeSha';
     color: #F3FDE8;
-    font-size: 5vw;
+    font-size: calc(var(--font_size) + 3.9vw);
+    line-height: 1.5;
+    margin-bottom: 2%;
 }
 
 /* Navbar */
@@ -63,7 +75,7 @@ nav a {
     color: #27233a;
     font-family: 'BarlowCon';
     text-decoration: none;
-    font-size: 2vw;
+    font-size: calc(var(--font_size) + 1vw);
     text-align: center;
 
     display: flex;
@@ -80,9 +92,9 @@ nav a:hover {
 }
 
 nav a:nth-child(3) {
+    font-family: 'BarlowSemiConBold';
     border: 2px solid #F3FDE8;
     box-shadow: 0 0 10px #FFF;
-    font-weight: bold;
     color: #F3FDE8;
 }
 
@@ -124,14 +136,15 @@ main section > div:first-child > div:first-child {
 /* Con 1.1 */
 main section h2 {
     font-family: 'BungeeOut';
-    font-size: 2.5vw;
+    line-height: 1.2;
+    font-size: calc(var(--font_size) + 1.7vw);
     display: flex;
     align-items: center;
 }
 
 main section h3 {
-    font-family: 'BarlowSemiCon';
-    font-size: 1.5vw;
+    font-family: 'BarlowSemiConBold';
+    font-size: calc(var(--font_size) + 0.8vw);
 }
 
 /* Con 1.2 */
@@ -195,12 +208,12 @@ main section > div:first-child > div:last-child > div:last-child > div {
 main section > div:first-child > div:last-child > div:last-child > div p {
     font-family: 'BarlowSemiCon';
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: calc(var(--font_size) + 0.5vw);
 }
 
 main section > div:first-child > div:last-child > div:last-child > div ol {
     padding-left: 2.5vh;
-    font-size: 1.3vw;
+    font-size: calc(var(--font_size) + 0.2vw);
 }
 
 main section > div:first-child > div:last-child > div:last-child > div:first-child {
@@ -267,6 +280,7 @@ main section:first-child > div:last-child > div:nth-child(3)::after {
     content: "Junia Jonsdottir, Twin";
     position: absolute;
     bottom: 1vh;
+    left: 0.5vh;
     font-family: 'BarlowSemiCon';
     color: #F3FDE8;
     text-shadow: 0 0 2px #000;
@@ -332,13 +346,13 @@ footer {
 @media (min-width: 1200px) {
 
     /* Font Sizes */
-    body > div {font-size: 16px;}
-    header h1 {font-size: 60px;}
-    nav a {font-size: 24px; }
-    main section h2 {font-size: 30px;}
-    main section h3 {font-size: 18px;}
-    main section > div:first-child > div:last-child > div:last-child > div p {font-size: 18px;}
-    main section > div:first-child > div:last-child > div:last-child > div ol {font-size: 16px;}
+    body > div {font-size: calc(var(--font_size) + 4px);}
+    header h1 {font-size: calc(var(--font_size) + 47px);}
+    nav a {font-size: calc(var(--font_size) + 12px); }
+    main section h2 {font-size: calc(var(--font_size) + 20px);}
+    main section h3 {font-size: calc(var(--font_size) + 10px);}
+    main section > div:first-child > div:last-child > div:last-child > div p {font-size: calc(var(--font_size) + 6px);}
+    main section > div:first-child > div:last-child > div:last-child > div ol {font-size: calc(var(--font_size) + 2px);}
 }
 
 @media (min-width: 800px) and (max-width: 900px) {
@@ -347,23 +361,23 @@ footer {
     }
 
     /* Font Sizes */
-    body > div {font-size: 13px;}
-    header h1 {font-size: 50px;}
-    nav a {font-size: 20px;}
-    main section h2 {font-size: 25px;}
-    main section h3 {font-size: 16px;}
-    main section > div:first-child > div:last-child > div:last-child > div p {font-size: 16px;}
-    main section > div:first-child > div:last-child > div:last-child > div ol {font-size: 13px;}
+    body > div {font-size: var(--font_size);}
+    header h1 {font-size: calc(var(--font_size) + 37px);}
+    nav a {font-size: calc(var(--font_size) + 7px);}
+    main section h2 {font-size: calc(var(--font_size) + 12px);}
+    main section h3 {font-size: calc(var(--font_size) + 3px);}
+    main section > div:first-child > div:last-child > div:last-child > div p {font-size: calc(var(--font_size) + 3px);}
+    main section > div:first-child > div:last-child > div:last-child > div ol {font-size: var(--font_size);}
 }
 
 /* Tablet */
 @media (min-width: 500px) and (max-width: 800px) {
 
     /* Font sizes */
-    header h1 {font-size: 50px;}
-    nav a {font-size: 22px;}
-    main section h2 {font-size: 30px;}
-    main section h3 {font-size: 20px;}
+    header h1 {font-size: calc(var(--font_size) + 37px);}
+    nav a {font-size: calc(var(--font_size) + 7px);}
+    main section h2 {font-size: calc(var(--font_size) + 12px);}
+    main section h3 {font-size: calc(var(--font_size) + 3px);}
     main section > div:first-child > div:last-child > div:last-child > div p {font-size: 3vw}
     main section > div:first-child > div:last-child > div:last-child > div ol {font-size: 2.5vw}
 
@@ -373,13 +387,13 @@ footer {
     }
 
     body > div {
-        font-size: 18px;
-        padding: 0 2%;
+        font-size: 16px;
+        padding: 0 4%;
     }
 
     /* Sec 1&2 */
     main section > div {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     /* Con 2 */
@@ -483,14 +497,14 @@ footer {
 @media (max-width: 500px) {
 
     /* Font Sizes */
-    body > div {font-size: 3.5vw;}
-    header h1 {font-size: 10vw;}
-    main section h2 {font-size: 6vw;}
-    main section h3 {font-size: 4vw;}
-    main section > div:first-child > div:last-child > div:last-child > div p {font-size: 4vw;}
-    main section > div:first-child > div:last-child > div:last-child > div ol {font-size: 3vw;}
+    body > div {font-size: calc(var(--font_size) + 0.5vw);}
+    header h1 {font-size: calc(var(--font_size) + 7vw);}
+    main section h2 {font-size: calc(var(--font_size) + 3vw);}
+    main section h3 {font-size: calc(var(--font_size) + 1.2vw);}
+    main section > div:first-child > div:last-child > div:last-child > div p {font-size: calc(var(--font_size) + 1vw);}
+    main section > div:first-child > div:last-child > div:last-child > div ol {font-size: calc(var(--font_size) + 0.3vw);}
     nav a {
-        font-size: 4.5vw;
+        font-size: calc(var(--font_size) + 1.5vw);
         padding: 2%;
     }
 
@@ -507,7 +521,7 @@ footer {
     /* Sec 1&2 */
 
     main > section > div:first-child {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     main > section > div:first-child > div:last-child {
         flex-direction: column;
